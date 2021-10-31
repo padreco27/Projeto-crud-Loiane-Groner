@@ -6,6 +6,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { CursosRoutingModule } from './cursos-routing.module';
 import { CursosComponent } from './cursos/cursos.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 
 
@@ -17,7 +18,8 @@ import { CursosComponent } from './cursos/cursos.component';
     CursosRoutingModule,
     MatTableModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    MatProgressSpinnerModule
   ]
 })
 export class CursosModule { }
