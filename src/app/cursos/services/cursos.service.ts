@@ -6,4 +6,12 @@ import { Injectable } from '@angular/core';
 export class CursosService {
 
   constructor() { }
+
+
+    list(){
+      return[
+        {_id: '1',nome:'Angular',categoria: 'Front-End'}
+      ]
+    }
+
 }
