@@ -19,7 +19,10 @@
   <!-- Name Column -->
   <ng-container matColumnDef="categoria">
     <th mat-header-cell *matHeaderCellDef> Categoria </th>
-    <td mat-cell *matCellDef="let cursos"> {{cursos.categoria}} </td>
+    <td mat-cell *matCellDef="let cursos"> {{cursos.categoria}}
+      <mat-icon aria-hidden="false" aria-label="Categoria do Curso">{{cursos.categoria | categoria}}</mat-icon>
+    </td>
+
   </ng-container>
 
 
@@ -27,8 +30,9 @@
   <tr mat-row *matRowDef="let cursos; columns: displayedColumns;"></tr>
 </table>
 </div>
+
 <ng-template #loading>
-  <div class="loading spiner">
+  <div class="loading-spinner">
     <mat-spinner></mat-spinner>
   </div>
   </ng-template>
